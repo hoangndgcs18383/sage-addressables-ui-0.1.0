@@ -1,0 +1,5 @@
+{
+  "name": "SAGE.AddressablesUI.Samples",
+  "references": ["SAGE.AddressablesUI"],
+  "autoReferenced": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "com.sage.addressables-ui",
+  "version": "0.1.0",
+  "displayName": "SAGE Addressables UI",
+  "description": "Reusable Addressables loading and UI screen management extracted from QuickFramework.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.addressables": "1.22.3",
+    "com.unity.ugui": "1.0.0"
+  },
+  "samples": [{
+    "displayName": "API Example",
+    "description": "Bootstrap and screen scripts. Create your own Addressable screen prefab.",
+    "path": "Samples~/API Example"
+  }]
+}

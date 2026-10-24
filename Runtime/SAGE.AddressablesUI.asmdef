@@ -1,0 +1,6 @@
+{
+  "name": "SAGE.AddressablesUI",
+  "rootNamespace": "SAGE.AddressablesUI",
+  "references": ["Unity.Addressables", "Unity.ResourceManager", "UnityEngine.UI"],
+  "autoReferenced": true
+}
