@@ -15,8 +15,14 @@ Giữ thư mục package ở vị trí cố định sau khi cài. Package Manage
 Đưa **nội dung** thư mục `com.sage.addressables-ui` vào root repository riêng
 (`package.json` nằm ngay tại root), rồi commit/push bằng tài khoản của bạn.
 Sau đó project khác cài bằng **Add package from git URL**, dùng URL repo của bạn.
-Nên tạo tag `v0.1.0` và thêm `#v0.1.0` vào Git URL để cố định phiên bản.
+Nên tạo tag `v0.2.0` và thêm `#v0.2.0` vào Git URL để cố định phiên bản.
 Không cần upload project game hay các file kiểm tra biên dịch.
+
+## Editor API (0.2.0)
+
+Package bao gồm AddressLibTool, AddressReferenceEditor và API tạo group, đăng ký Addressable,
+gán label, quét folder và sinh lớp key → GUID. Có nút Build trong Inspector, không cần Odin.
+Xem [Editor/README.md](Editor/README.md) để cấu hình và gọi API từ script Editor hoặc CI.
 
 ## Gọi API
 
@@ -91,7 +97,8 @@ không kèm sprite spinner của game; bạn có thể thêm hình spinner vào 
   từ `SAGE.Framework.Core.*` sang `SAGE.AddressablesUI` để có thể cùng tồn tại với framework cũ.
 - Các prefab/script screen từ game cần đổi base class/namespace và loại bỏ dependency riêng
   của game khi chuyển sang package. Đây không phải thay thế trực tiếp UIManager.prefab cũ.
-- Không chứa art, UIRewardCoin, mã generate BaseScreenAddress hoặc prefab thương mại.
+- Không chứa art, UIRewardCoin, danh sách GUID BaseScreenAddress của game hoặc prefab thương mại.
+  Có Editor API để sinh lớp địa chỉ riêng cho project sử dụng package.
 - LoadingManager cung cấp load/activate scene và unload additive. Không sao chép cơ chế preload
   nhiều scene chưa activate của bản cũ vì nó có thể chặn hàng đợi async của Unity.
 - Async dùng Task và completion callback Addressables, không dùng handle.Task hay Task.Run

@@ -1,0 +1,7 @@
+{
+  "name": "SAGE.AddressablesUI.Editor",
+  "rootNamespace": "SAGE.AddressablesUI.Editor",
+  "references": ["SAGE.AddressablesUI", "Unity.Addressables", "Unity.ResourceManager", "Unity.Addressables.Editor"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}
